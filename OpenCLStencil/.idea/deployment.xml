@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Graphcore DevCloud (8456bc25-34d6-4b56-9987-5e633ca3f7e5)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/opencl-stencil" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
