@@ -18,3 +18,6 @@ available in pre-print at [https://easychair.org/publications/preprint/ztfj](htt
 To build the code, you will need the Graphcore SDK installed with paths set up as in the SDK instructions.
 
 You should also make these paths available to CMAKE (using the CMAKE_INCLUDE_PATH and CMAKE_LIBRARY_PATH paths).
+
+This code include two example structured grid codes on the IPU: a Guassian Blur filter, and a 2D Lattice Boltzmann (LBM) simulation. It demonstrates how we approached partitioning grids over the IPUs' tiles and how we performed halo exchange of border cells between tiles.
+
