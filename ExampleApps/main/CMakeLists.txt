@@ -5,7 +5,6 @@ include_directories(lib/lodepng)
 include_directories(lib/cxxopts)
 
 set(Main_SRCS
-        include/DoubleRoll.hpp
         include/GraphcoreUtils.hpp
         include/LbmParams.hpp
         include/LatticeBoltzmannUtils.hpp
@@ -13,37 +12,10 @@ set(Main_SRCS
         include/ImageUtils.hpp
         )
 
-add_executable(lbm_cpu
-        LbmCpu.cpp
-        ${Main_SRCS}
-        )
-
-add_executable(lbm_poplibs
-        LbmPoplibs.cpp
-        ${Main_SRCS}
-        )
-
-add_executable(lbm_low_level
-        LbmSimple.cpp
-        ${Main_SRCS}
-        )
-
-
 add_executable(lbm_low_level_aos
         LbmAoS.cpp
         ${Main_SRCS}
         )
-
-
-add_executable(compareLbm
-        LastChance.cpp
-        )
-
-add_executable(lbm_runner
-        LbmRunner.cpp
-        ${Main_SRCS}
-        )
-
 
 add_executable(gb_cpu
         GaussianBlurCpu.cpp
