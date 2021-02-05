@@ -45,4 +45,4 @@ Using cmake, you can simply build the targets described in `CMakeLists.txt`.
 In each case, running the application shows the required command line parameters and format help. We have included the original images and LBM parameters and obstacles that we discussed in the paper.
 
 ## Credits
-We used the [`cxxopts`](https://github.com/jarro2783/cxxopts) and (`lodepng`)[https://github.com/lvandeve/lodepng] libraries in this work.
+We used the [`cxxopts`](https://github.com/jarro2783/cxxopts) and [`lodepng`](https://github.com/lvandeve/lodepng) libraries in this work.
