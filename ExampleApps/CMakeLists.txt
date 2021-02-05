@@ -20,4 +20,4 @@ find_package(poplibs REQUIRED)
 enable_testing()
 
 add_subdirectory(main)
-add_subdirectory(test)
+#add_subdirectory(test)

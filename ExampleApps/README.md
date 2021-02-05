@@ -4,6 +4,8 @@ The example applications stencil discussed in our paper are
 (1) A Gaussian Blur image filter, and
 (2) A 2D Lattice Boltzmann fluid simulation
 
+In each case, running the application shows the required command line parameters and format help. We have included the original images and LBM parameters and obstacles that we discussed in the paper.
+
 ## Halo Region Approaches
 Weve also included a program and associated codelets that demonstrate various approaches to performing halo exchange using the Poplar framework. We demonstrate an ''implicit' approach, in which we assign slices of a large tensor to different tile memories, and also use the Poplar functions for appending and concatenating tensors to build a description of the data with associated halo regions. The compiler then figures out the necessary communication. We also demonstrate an 'explicit' approach in which extra padding regions are left in the large grid tensor and halos are manually copied using `Copy` programs. Note that the order in which these operations are grouped drastically affects halo exchange performance. Running the explicit approach on the IPU is only possible with SDK >1.4, because of a compiler issue we identified that prevented the same tensor being copied in two different directions in the same compute set. 
 
